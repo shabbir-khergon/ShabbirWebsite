@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/ShabbirWebsite/static/css/main.f92731da.css",
+    "main.js": "/ShabbirWebsite/static/js/main.7811eacf.js",
+    "static/media/hannah-grace-j9JoYpaJH3A-unsplash.jpg": "/ShabbirWebsite/static/media/hannah-grace-j9JoYpaJH3A-unsplash.291ce1347583936c6691.jpg",
+    "static/media/simon-abrams-k_T9Zj3SE8k-unsplash.jpg": "/ShabbirWebsite/static/media/simon-abrams-k_T9Zj3SE8k-unsplash.960fc6194991de43a157.jpg",
+    "static/media/emile-perron-xrVDYZRGdw4-unsplash.jpg": "/ShabbirWebsite/static/media/emile-perron-xrVDYZRGdw4-unsplash.b01fe58a627e40c3b75b.jpg",
+    "static/media/clark-tibbs-oqStl2L5oxI-unsplash.jpg": "/ShabbirWebsite/static/media/clark-tibbs-oqStl2L5oxI-unsplash.e0146455e09413026472.jpg",
+    "static/media/ss.jpg": "/ShabbirWebsite/static/media/ss.685f0e680ea0d70b8a45.jpg",
+    "static/media/typescript.png": "/ShabbirWebsite/static/media/typescript.6b49df2deaf34c3fa1ab.png",
+    "static/media/me.jpg": "/ShabbirWebsite/static/media/me.f9219fb665903f0e9738.jpg",
+    "static/media/express.png": "/ShabbirWebsite/static/media/express.375eee7619857b2ae37a.png",
+    "static/media/ShabbirKhargonCV.doc": "/ShabbirWebsite/static/media/ShabbirKhargonCV.c31283b1e0d81bba0bf1.doc",
+    "static/media/mongodb.svg": "/ShabbirWebsite/static/media/mongodb.15fe4efba08d6388c62695c4c68f8b0c.svg",
+    "static/media/node.svg": "/ShabbirWebsite/static/media/node.cf2b4de6f517ce6f0c318e8c6a3ccad3.svg",
+    "index.html": "/ShabbirWebsite/index.html",
+    "static/media/react.svg": "/ShabbirWebsite/static/media/react.928f956d9c8ebcffb98a8e917154a81a.svg",
+    "main.f92731da.css.map": "/ShabbirWebsite/static/css/main.f92731da.css.map",
+    "main.7811eacf.js.map": "/ShabbirWebsite/static/js/main.7811eacf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f92731da.css",
+    "static/js/main.7811eacf.js"
+  ]
+}
