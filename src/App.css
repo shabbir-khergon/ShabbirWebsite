@@ -1,38 +1,643 @@
-.App {
-  text-align: center;
+:root{
+  --primmary:#030d1d;
+  --secondary:#393E46;
+  --accent:#00ADB5;
+  --accent2:#EE9933;
+  --font:#EEEEEE;
+
+  --arabic:'Amiri Quran', serif;
+  --dosis:'Dosis', sans-serif;
+  --lato:'Lato', sans-serif;
+  --openSans:'Open Sans', sans-serif;
+  --pacifico:'Pacifico', cursive;
+  --playfairDisplay:'Playfair Display', serif;
+  --poppins:'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  --d: 700ms;
+  --e: cubic-bezier(0.19, 1, 0.22, 1);
+  font-family: 'Montserrat', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html,body{
+  background-color: var(--primmary);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+::-webkit-scrollbar{
+  display: none;
+}
+
+hr {
+color: var(--font);}
+
+#Home{
+  height: 90vh;
+  /* background-image: url('../src/assets/img/nubelson-fernandes--Xqckh_XVU4-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.masthead{
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+
+.arabicFont{
+  font-family: var(--arabic);
+  font-size: 7rem;
+  color: var(--font);
+}
+
+.styledFont{
+  font-family: var(--playfairDisplay);
+  font-size: 6rem;
+  font-weight: 800;
+  color: var(--primmary);
+  text-shadow: 0px 0px 5px var(--accent);
+}
+
+.text-accent2{
+  color: var(--accent2);
+}
+
+.text-green{
+  color: #71bc00;
+}
+
+.text-accent{
+  color: var(--accent)
+}
+
+.text-lato{
+  font-family: var(--lato);
+}
+
+.text-dosis{
+  font-family: var(--dosis);
+}
+
+.text-pacifico{
+  font-family: var(--pacifico);
+}
+
+.text-playfaildisplay{
+  font-family: var(--playfairDisplay);
+}
+
+.text-openSans{
+  font-family: var(--openSans);
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+.nav-link{
+  color: var(--accent);
+  font-size: 1.2rem;
+  font-family: var(--lato);
+  letter-spacing: 2px;
+}
+
+.nav-pills .nav-link:hover{
+  color: var(--accent2);
+  transition:color 0.5s ease;
+}
+
+.nav-pills .nav-link.active{
+  background-color: transparent !important;
+  color: var(--accent2) !important;
+}
+
+
+#About{
+  height: 90vh;
+  margin-bottom: 5vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-items: center;
+  padding: 1rem;
+}
+
+a{
+color: inherit;
+}
+a:hover{
+  color: inherit;
+}
+
+.btnTheme{
+  border: 2px solid var(--accent);
+  background-color: transparent;
+  color: var(--accent);
+  font-size: 2rem;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+}
+
+.btnTheme:hover{
+  background-color: transparent;
+  border: 2px solid var(--accent2);
+  color: var(--accent2);
+}
+
+#Technologies{
+   background-image: url("./assets/img/clark-tibbs-oqStl2L5oxI-unsplash.jpg");   
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1rem;
+
+}
+
+#Experience{
+  height: 7vh;
+}
+
+#Contact{
+  /* overflow-x: hidden;
+  height: 95vh;
+  perspective: 1px;
+  perspective-origin: center top;
+  transform-style: preserve-3d; */
+
+  background-image: url("./assets/img/simon-abrams-k_T9Zj3SE8k-unsplash.jpg");   
+  /* Full height */
+  height: 100%;
+  max-height: 95vh;
+  padding: 4rem;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    transform-origin: center top;
+}
+
+
+.progress-container {
+	position: fixed;
+	top: 10px;
+  left: 5px;
+	width: 8px;
+	height: 97%;
+	background: transparent;
+	border-radius: 2px;
+	margin: auto;
+}
+
+.progress-bar {
+	width: 7px;
+	background: #249b9b93;
+	border-radius: 2px;
+}
+
+.progress-bar:before {
+	height: 1%;
+}
+
+.glowScroll {
+  background: var(--primmary);
+	-webkit-box-shadow: 0px 0px 20px 10px  rgba(167, 255, 255, 0.21);
+	-moz-box-shadow:0px 0px 20px 10px  rgba(167, 255, 255, 0.21);
+	box-shadow:0px 0px 20px 10px rgba(167, 255, 255, 0.21);
+}
+
+
+#Footer{
+  height: 5vh;
+  padding: 0.5rem;
+}
+ 
+
+.boxTextContact h3{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--font);
+    font-family: var(--pacifico);
+    text-shadow:0px 0px 5px  var(--primmary);
+}
+
+
+.boxTextContact .links {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  justify-items: center;
+}
+
+.boxTextContact .links p {
+  color: var(--secondary);
+  font-weight: 500;
+}
+
+.boxTextContact .links a {
+  color:var(--accent);
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: all .4s;
+  background-color: #EBEBEB;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.boxTextContact .links a:hover {
+  color: #59cdff;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.boxImageContact{
+  height: 80vh;
+  width: 60%;
+  border: 2px solid black;
+  border-radius: 1rem;
+}
+
+
+/* The device with borders */
+.smartphone {
+  position: relative;
+  width: 320px;
+  height: 640px;
+  margin: auto;
+  border: 6px black solid;
+  border-top-width: 8px;
+  border-bottom-width: 10px;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: #ebebeb;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+/* The horizontal line on the top of the device */
+.smartphone:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  background: black;
+  border-radius: 30px;
+}
+
+/* The circle on the bottom of the device */
+.smartphone:after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 5px;
+  position: absolute;
+  left: 50%;
+  bottom: 1px;
+  transform: translate(-50%, -50%);
+  background: #1d1d1d;
+  border-radius: 5px;
+}
+
+.content img{
+  width: 100%;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+.blurContent{
+  width:290px;
+  height: 400px;
+  position: absolute;
+  top: 200px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow: hidden;
+}
+.blurredpart {
+  position: absolute;
+  top: -30px;
+  left: -10px;
+  bottom: 0px;
+  right: 0px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.558),rgba(255, 255, 255, 0.847), #EBEBEB);
 }
 
-.App-link {
-  color: #61dafb;
+.boxImageContact img{
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.resumeBtn{
+  position: absolute;
+  z-index: 2;
+  bottom: 20px;
+  width: 260px;
+}
+
+.downbtn{
+  padding: 1rem!important;
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+    /* The device with borders */
+    .smartphone {
+      width: 180px;
+      height: 360px;
+    }
+    
+    /* The horizontal line on the top of the device */
+    .smartphone:before {
+      width: 12px;
+      height: 12px;
+    }
+    
+    /* The circle on the bottom of the device */
+    .smartphone:after {
+      width: 50px;
+      height: 3px;
+    }
+    
+    #Contact{
+      padding:1rem 0 ;
+    }
+    
+    .blurContent{
+      width:150px;
+      height: 230px;
+      top: 100px;
+    }
+    .resumeBtn{
+      width: 140px;
+    }
+    .downbtn{
+      font-size: 7px!important;
+      padding: 0.5rem 0!important;
+    }
+    
+    .boxTextContact h3{
+      margin-top: 2rem;
+      font-size: 1.7rem;
+      font-weight: 500;
+      color: var(--font);
+      text-shadow:0px 0px 5px  var(--primmary);
+    }
+    
+    
+    .boxTextContact .links {
+    font-size: 1rem;
+    }
+    .boxTextContact .links a {
+    font-size: 1rem;
+    padding: 7px;
+    border-radius: 5px;
+    }
+}
+ 
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px)
+and (orientation: portrait) {
+
+  
+  .arabicFont{
+    font-family: var(--arabic);
+    font-size: 3rem;
+    color: var(--font);
   }
-  to {
-    transform: rotate(360deg);
+  
+  .styledFont{
+    font-family: var(--playfairDisplay);
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--primmary);
+    text-shadow: 0px 0px 5px var(--accent);
   }
+  
+  .nav-link{
+    color: var(--accent);
+    font-size: 1rem;
+    font-family: var(--lato);
+    letter-spacing: 0;
+  }
+  
+  #Technologies{
+    background-image: url("./assets/img/hannah-grace-j9JoYpaJH3A-unsplash.jpg");   
+  }
+
+  /* The device with borders */
+.smartphone {
+  width: 180px;
+  height: 360px;
+}
+
+/* The horizontal line on the top of the device */
+.smartphone:before {
+  width: 12px;
+  height: 12px;
+}
+
+/* The circle on the bottom of the device */
+.smartphone:after {
+  width: 50px;
+  height: 3px;
+}
+
+#Contact{
+  padding:1rem 0 ;
+}
+
+.blurContent{
+  width:150px;
+  height: 230px;
+  top: 100px;
+}
+.resumeBtn{
+  width: 140px;
+}
+.downbtn{
+  font-size: 7px!important;
+  padding: 0.5rem 0!important;
+}
+
+.boxTextContact h3{
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: var(--font);
+  text-shadow:0px 0px 5px  var(--primmary);
+}
+
+
+.boxTextContact .links {
+font-size: 1rem;
+}
+.boxTextContact .links a {
+font-size: 1rem;
+padding: 7px;
+border-radius: 5px;
+} 
+
+#About{
+  padding: 0.2rem;
+}
+
+}
+ 
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+  
+  .arabicFont{
+    font-family: var(--arabic);
+    font-size: 3rem;
+    color: var(--font);
+  }
+  
+  .styledFont{
+    font-family: var(--playfairDisplay);
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--primmary);
+    text-shadow: 0px 0px 5px var(--accent);
+  }
+  
+  .nav-link{
+    color: var(--accent);
+    font-size: 1rem;
+    font-family: var(--lato);
+    letter-spacing: 0;
+  }
+
+
+    /* The device with borders */
+.smartphone {
+  width: 180px;
+  height: 360px;
+}
+
+/* The horizontal line on the top of the device */
+.smartphone:before {
+  width: 12px;
+  height: 12px;
+}
+
+/* The circle on the bottom of the device */
+.smartphone:after {
+  width: 50px;
+  height: 3px;
+}
+
+#Contact{
+  padding:1rem 0 ;
+}
+
+.blurContent{
+  width:150px;
+  height: 230px;
+  top: 100px;
+}
+.resumeBtn{
+  width: 140px;
+}
+.downbtn{
+  font-size: 7px!important;
+  padding: 0.5rem 0!important;
+}
+
+.boxTextContact h3{
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: var(--font);
+  text-shadow:0px 0px 5px  var(--primmary);
+}
+
+
+.boxTextContact .links {
+font-size: 1rem;
+}
+.boxTextContact .links a {
+font-size: 1rem;
+padding: 7px;
+border-radius: 5px;
+} 
+
+
 }

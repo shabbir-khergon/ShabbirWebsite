@@ -1,0 +1,56 @@
+
+
+.mainhead{
+    font-size: 3rem;
+    font-family: var(--poppins);
+    color: var(--accent2);
+    text-shadow:2px 3px 4px #402800,0 -2px 1px var(--accent);
+}
+
+.heading{
+    font-family: var(--dosis);
+    font-size: 2.2rem;
+    font-size: 600;
+    color: whitesmoke;
+    border-bottom:2px solid  var(--accent2);
+    letter-spacing: 2px;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.listings{
+    list-style: none;
+    padding-left: 0 !important;
+}
+
+.listitem{
+    font-weight:lighter;
+    font-family: var(--lato);
+    color: var(--font);
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.cfcard{
+    background-image:linear-gradient(to bottom, #2c2c2cb7,#00000000)
+}
+
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #004e6d, 0 0 20px #004e6d, 0 0 25px #004e6d, 0 0 30px #004e6d, 0 0 35px #004e6d;
+    }
+    to {
+      text-shadow: 0 0 10px #fff, 0 0 15px #72ddfb, 0 0 20px #72ddfb, 0 0 25px #72ddfb, 0 0 30px #72ddfb, 0 0 35px #72ddfb, 0 0 40px #72ddfb;
+    }
+  }
+
+  @media screen and (max-device-width: 480px)
+  and (orientation: portrait) {
+.mainhead{
+    font-size: 2rem;
+}
+    
+  }
+   
