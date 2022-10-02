@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2aab4701.css",
+    "main.js": "/static/js/main.3e5111ca.js",
+    "static/media/hannah-grace-j9JoYpaJH3A-unsplash.jpg": "/static/media/hannah-grace-j9JoYpaJH3A-unsplash.291ce1347583936c6691.jpg",
+    "static/media/simon-abrams-k_T9Zj3SE8k-unsplash.jpg": "/static/media/simon-abrams-k_T9Zj3SE8k-unsplash.960fc6194991de43a157.jpg",
+    "static/media/emile-perron-xrVDYZRGdw4-unsplash.jpg": "/static/media/emile-perron-xrVDYZRGdw4-unsplash.b01fe58a627e40c3b75b.jpg",
+    "static/media/clark-tibbs-oqStl2L5oxI-unsplash.jpg": "/static/media/clark-tibbs-oqStl2L5oxI-unsplash.e0146455e09413026472.jpg",
+    "static/media/ss.jpg": "/static/media/ss.685f0e680ea0d70b8a45.jpg",
+    "static/media/typescript.png": "/static/media/typescript.6b49df2deaf34c3fa1ab.png",
+    "static/media/me.jpg": "/static/media/me.f9219fb665903f0e9738.jpg",
+    "static/media/express.png": "/static/media/express.375eee7619857b2ae37a.png",
+    "static/media/ShabbirKhargonCV.doc": "/static/media/ShabbirKhargonCV.c31283b1e0d81bba0bf1.doc",
+    "static/media/mongodb.svg": "/static/media/mongodb.15fe4efba08d6388c62695c4c68f8b0c.svg",
+    "static/media/node.svg": "/static/media/node.cf2b4de6f517ce6f0c318e8c6a3ccad3.svg",
+    "index.html": "/index.html",
+    "static/media/react.svg": "/static/media/react.928f956d9c8ebcffb98a8e917154a81a.svg",
+    "main.2aab4701.css.map": "/static/css/main.2aab4701.css.map",
+    "main.3e5111ca.js.map": "/static/js/main.3e5111ca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2aab4701.css",
+    "static/js/main.3e5111ca.js"
+  ]
+}
